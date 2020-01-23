@@ -7,7 +7,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<!-- Logger stuff for 5+ -->
+	<!-- Logger stuff for spring 5+ -->
 	<bean id="myLoggerConfig" class="com.ikiugu.springdemo.MyLoggerConfig" init-method="initLogger">
     	<property name="rootLoggerLevel" value="FINE" />
     	<property name="printedLoggerLevel" value="FINE"/>
