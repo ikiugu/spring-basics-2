@@ -1,13 +1,14 @@
 package com.ikiugu.springdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class TennisCoach implements Coach {
 	
 	@Autowired
-	private HappyFortuneService happyFortuneService;
+	private FortuneService fortuneService;
 	
 	public TennisCoach() {
 		System.out.println(">> Tennis coach constructor");
@@ -31,7 +32,7 @@ public class TennisCoach implements Coach {
 
 	@Override
 	public String getDailyFortune() {
-		return happyFortuneService.getFortune();
+		return fortuneService.getFortune();
 	}
 
 }
