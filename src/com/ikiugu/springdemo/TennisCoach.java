@@ -24,7 +24,7 @@ public class TennisCoach implements Coach {
 	}
 
 	@Autowired
-	public void setHappyFortuneService(HappyFortuneService happyFortuneService) {
+	public void thisIsAweirdNameForThis(HappyFortuneService happyFortuneService) {
 		this.happyFortuneService = happyFortuneService;
 	}
 
