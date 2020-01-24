@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class TennisCoach implements Coach {
 	
+	@Autowired
 	private HappyFortuneService happyFortuneService;
 	
 	public TennisCoach() {
@@ -23,10 +24,10 @@ public class TennisCoach implements Coach {
 		return "Backhand volley x10";
 	}
 
-	@Autowired
-	public void thisIsAweirdNameForThis(HappyFortuneService happyFortuneService) {
-		this.happyFortuneService = happyFortuneService;
-	}
+	/*
+	 * @Autowired public void thisIsAweirdNameForThis(HappyFortuneService
+	 * happyFortuneService) { this.happyFortuneService = happyFortuneService; }
+	 */
 
 	@Override
 	public String getDailyFortune() {
